@@ -1,0 +1,26 @@
+<div class="employeecard" >
+        <form class="row g-3" (ngSubmit)="createEmployees(employeeForm)" #employeeForm="ngForm">
+            <div class="row">
+            <div class="col-md-6">
+              <label  class="form-label mt-4">EMPLOYEENAME</label>
+              <input type="text" name="employeename" ngModel class="form-control" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <label  class="form-label mt-3">EMPLOYEEDISCANATON</label>
+              <input type="text" name='employeeDesingnation' ngModel class="form-control" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <label class="form-label mt-3">EMPLOYEESALARY</label>
+              <input type="text" name="employeeSalary" ngModel class="form-control" >
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </form>
+    
+</div>

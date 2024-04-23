@@ -1,0 +1,7 @@
+.employeecard{
+
+    height: 400px;
+    width: 1100px;
+    margin: 100px auto;
+    box-shadow: 0 0 15px black;
+}

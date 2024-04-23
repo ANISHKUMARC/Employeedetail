@@ -1,0 +1,13 @@
+.wrapper{
+    display: flex;
+    background-color: beige;
+    padding: 15px;
+    color: blueviolet;
+}
+.logo{
+    width: 300px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}

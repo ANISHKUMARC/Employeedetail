@@ -1,0 +1,29 @@
+<div class="container">
+
+
+    <div class="employeecard">
+        <a class="btn btn-primary" routerLink="/create">+ADD</a>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">EMPLOYEENAME</th>
+                <th scope="col">EMPLOYEEDISCANATON</th>
+                <th scope="col">EMPLOYEESALARY</th>
+                <th scope="col">ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let employee of employeedt">
+                <td>{{employee.employeename}}</td>
+                <td>{{employee.employeeDesingnation}}</td>
+                <td>{{employee.employeeSalary}}</td>
+                <td><button type="button" class="btn btn-primary me-2" (click)="viewEmployee(employee.id)">VIEW</button>
+                    <button type="button" class="btn btn-secondary me-2" (click)="updateEmployee(employee.id)">EDIT</button>
+                    <button type="button" class="btn btn-danger me-2" (click)="deleteEmployee(employee.id)">DELETE</button>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+</div>
